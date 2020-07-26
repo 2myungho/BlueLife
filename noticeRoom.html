@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>공시실 페이지</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/noticeRoom.css">
+		<link rel="stylesheet" href="css/nav-footer.css">
+		<!--[if lt IE9]>
+			<script src="html5shiv-master/dist/html5shiv.js"></script>
+		<![endif]--->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/modernizr.custom.48669.js"></script>
+		<script src="js/swipe.js"></script>
+		<script src="js/respond.src.js"></script>
+
+		<script>
+			$(function(){
+				$('.right-sideBar ul li a').eq(0).attr('class','right-sideBar-basic');
+				$('.right-sideBar ul li a').click(function(){
+					$('.right-sideBar ul li a').removeClass('right-sideBar-basic');
+					$('this').addClass('right-sideBar-basic');
+				});
+			});
+		</script>
+
+
+	</head>
+	<body>
+	<!--<header id="main-header">-->
+		<div id="header-inner">
+			<h1 class="main-logo">
+				<a href="main.html"><img src="images/top-logo.png" alt="블루라이프생명로고"></a>
+			</h1>
+			<a href="#" class="main-nav-3bar"><img src="images/main-3bar.png" alt=""></a>
+			<ul id="gnb">
+				<li><a href="#">로그인</a></li>
+				<li><a href="#">마이페이지</a></li>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">인증센터</a></li>
+				<li><a href="noticeRoom.html">공시실</a></li>
+				<!--<li>
+					<select>
+						<option value="">공시실 안내</option>
+						<option value="">경영공시실</option>
+						<option value="">상품공시실</option>
+						<option value="">변액보험공시실</option>
+						<option value="">보험가격공시실</option>
+						<option value="">방카슈랑스공시실</option>
+						<option value="">보호금융상품등록부</option>
+						<option value="">신탁관련공시</option>
+						<option value="">사회공헌공시실</option>
+					</select>
+				</li>-->
+				<li>
+					<div id="main-search">
+						<a href="" class="main-serch-box"><img src="images/nav-icon.png"></a>
+						<div id="main-search-all">
+							<input type="search" id="main-search" name="main-search" placeholder="검색어를 입력하세요.">
+							<input type="submit" value="검색">
+							<ul>
+								<li class="main-search-tit"><a href="#">자주찾는 검색어</a></li>
+								<li><a href="#">해지</a></li>
+								<li><a href="#">약관</a></li>
+								<li><a href="2030.html">2030보험</a></li>
+								<li><a href="#">종신보험</a></li>
+								<li><a href="#">가입</a></li>
+								<li><a href="#">설계</a></li>
+								<li><a href="#">계약</a></li>
+								<li><a href="#">청약</a></li>
+							</ul>
+							<a href="" class="main-serch-close">검색창 닫기</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<nav id="lnb">
+				<ul>
+					<li>
+						<a href="sub.html">보험상품</a>
+
+					</li>
+
+					<li>
+						<a href="#">금융상품</a>
+					</li>
+
+					<li>
+						<a href="#">퇴직연금</a>
+
+					</li>
+
+					<li>
+						<a href="#">고객혜택</a>
+
+					</li>
+
+					<li>
+						<a href="service-center.html">고객센터</a>
+
+					</li>
+				</ul>
+				<div id="allmenu">
+					<div class="all-center-box">
+						<!--<form method="post">
+							<input type="search" id="main-search" name="main-search">
+							<input type="submit" value="검색">
+						</form>-->
+						<ul>
+							<li class="all-tit">
+								<input type="search" id="main-all-search" name="main-search" placeholder="검색어를 입력하세요.">
+								<input type="submit" value="검색">
+							</li>
+						</ul>
+						<ul>
+							<li class="all-tit"><a href="sub.html">보험상품</a>
+								<ul>
+									<li class="none"><a href="sub.html">보험상품 메인</a>
+									<li><a href="2030.html">2030보험</a>
+									<li><a href="#">종신/정기</a></li>
+									<li><a href="#">치아, 암, 건강</a></li>
+									<li><a href="#">노후대비</a></li>
+									<li><a href="#">여행/원데이 보험</a></li>
+									<li><a href="#">반려동물 보험</a></li>
+									<li><a href="#">어린이 보험</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li class="all-tit"><a href="#">금융상품</a>
+								<ul>
+									<li class="none"><a href="#">금융상품 메인</a></li>
+									<li><a href="#">대출</a></li>
+									<li><a href="#">펀드</a></li>
+									<li><a href="#">신탁</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li class="all-tit"><a href="#">퇴직연금</a>
+								<ul>
+									<li class="none"><a href="#">퇴직연금 메인</a></li>
+									<li><a href="#">퇴직연금 안내</a></li>
+									<li><a href="#">퇴직연금 서비스</a></li>
+									<li><a href="#">퇴직연금 상품</a></li>
+									<li><a href="#">이용 가이드</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li class="all-tit"><a href="#">고객혜택</a>
+								<ul>
+									<li class="none"><a href="#">고객혜택 메인</a></li>
+									<li><a href="#">이벤트</a></li>
+									<li><a href="#">이벤트 안내</a></li>
+									<li><a href="#">당첨자 발표</a></li>
+									<li><a href="#">건강관리서비스</a></li>
+									<li><a href="#">VIP서비스</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li class="all-tit"><a href="service-center.html">고객센터</a>
+								<ul>
+									<li class="none"><a href="#">고객센터 메인</a></li>
+									<li><a href="#">자주 찾는 매장</a></li>
+									<li><a href="#">고객의 소리</a></li>
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">보험금 신청 안내</a></li>
+									<li><a href="#">기타 안내</a></li>
+									<li><a href="#">필수 서류 안내</a></li>
+									<li><a href="#">ARS안내</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+		<!---------------------------------------content------------------------------------->
+
+	<section id="sub-content">
+		<div class="sub-top-content">
+			<article class="sub-top-inner">
+				<p class="location">
+					<a href="main.html">메인</a> <span>></span>
+					<a href="noticeRoom.html">공시실</a>
+				</p>
+				<div id="sub-top-leftBox">
+					<h2>공시실 안내</h2>
+					<p>규정 및 공시기준에 의해 상품 및 경영정보를 제공하고 있습니다.</p>
+				</div>
+				<div id="sub-top-rightBox">
+					<h3>공시실이 필요할 때!</h3>
+					<ul>
+						<li>- 보험약관을 확인하고 싶을 때. </li>
+						<li>- 금리연동형 보험의 적용이율, 변액보험의 수익률 등이 궁금할 때</li>
+						<li>- 다양한 보험상품을 서로 비교해 보고 싶을 때.</li>
+						<li>- 건강인 할인에 대한 정보를 알고 싶을 때.</li>
+						<li>- 다른 금융회사 상품과 비교하고 싶을 때.</li>
+					</ul>
+					<a href="#">자세히 보기 ></a>
+				</div>
+			</article>
+		</div>
+
+		<div id="sub-content-inner">
+			<div id="sub-content-left">
+				<article id="noticeRomm-explanation">
+					<h3>금융 상품 공시란?</h3>
+					<ul>
+						<li class="notosanskr">
+							금융상품공시는 금융소비자가 금융상품을 이해하고 선택하는데 유용한 정보를 제공함으로써 금융소비자를 보호하기 위한 제도입니다.
+						</li>
+						<li class="notosanskr">
+							보험상품을 가입하기 전 상품공시실의 약관, 상품요약서 및 사업방법서 등을 통해 상품내용을 꼭 확인하여야 합니다.
+						</li>
+						<li class="notosanskr">
+							보험상품공시는 생명보험에 대한 폭넓은 이해와 올바른 보험상품 선택에 도움을 드리기 위해 보험업감독규정 및 보험업감독업무 시행세칙과 생명보험협회에서 정한 생명보험 상품통일공시기준에 따라 표준화된 양식으로 작성된 것입니다.
+						</li>
+					</ul>
+				</article>
+
+				<article id="noticeRomm-contents">
+					<ul>
+						<li>
+							<h3>경영 공시실</h3>
+							<p class="notosanskr">금융소비자, 주주 및 이해관계자들에게 경영정보를 투명하게 공개합니다.</p>
+							<div class="box-center">
+								<div class="noticeRomm-contents-box"><a href="">수시경영공시</a></div>
+								<div class="noticeRomm-contents-box"><a href="">정시경영공시</a></div>
+							</div>
+							<a href="">자세히 보기</a>
+						</li>
+						<li>
+							<h3>상품 공시실</h3>
+							<p class="notosanskr">올바른 보험상품 선택에 도움을 드리기 위해 규정에 의해 작성됩니다.</p>
+							<div class="box-center">
+								<div class="noticeRomm-contents-box"><a href="">판매상품</a></div>
+								<div class="noticeRomm-contents-box"><a href="">판매중지상품</a></div>
+							</div>
+							<a href="">자세히 보기</a>
+						</li>
+						<li>
+							<h3>변액 보험 공시실</h3>
+							<p class="notosanskr">변액보험 운용설명서 및 운용현황, 수시공시사항을 확인할 수 있습니다.</p>
+							<div class="box-center">
+								<div class="noticeRomm-contents-box"><a href="">펀드수익률조회</a></div>
+								<div class="noticeRomm-contents-box"><a href="">상품펀드조회</a></div>
+							</div>
+							<a href="">자세히 보기</a>
+						</li>
+						<li>
+							<h3>보험 가격 공시실</h3>
+							<p class="notosanskr">보험상품의 보험료 계산을 통해 상품별비교가 가능합니다.</p>
+							<div class="box-center">
+								<div class="noticeRomm-contents-box"><a href="">보험료 계산</a></div>
+								<div class="noticeRomm-contents-box"><a href="">상품별비교</a></div>
+							</div>
+							<a href="">자세히 보기</a>
+						</li>
+						<li>
+							<h3>방카슈랑스 공시실</h3>
+							<p class="notosanskr">방카슈랑스 상품의 금융기관별 모집 수수료율을 확인할 수 있습니다.</p>
+							<div class="box-center">
+								<div class="noticeRomm-contents-box"><a href="">보장성 보험</a></div>
+								<div class="noticeRomm-contents-box"><a href="">생사혼합(장기)</a></div>
+							</div>
+							<a href="">자세히 보기</a>
+						</li>
+						<li>
+							<h3>보호금융 상품 등록부</h3>
+							<p class="notosanskr">블루라이프생명 상품 중 예금보험공사가 예금자 보호법에 의해 보호하는 금융상품입니다.</p>
+							<div class="box-center">
+								<div class="noticeRomm-contents-box"><a href="">개인보험</a></div>
+								<div class="noticeRomm-contents-box"><a href="">단체보험</a></div>
+							</div>
+							<a href="">자세히 보기</a>
+						</li>
+						<li>
+							<h3>신탁관련 공시</h3>
+							<p class="notosanskr">블루라이프생명이 주주로서 의결권을 행사한 내용을 공시합니다.</p>
+							<div class="box-center">
+								<div class="noticeRomm-contents-box"><a href="">계약서</a></div>
+								<div class="noticeRomm-contents-box"><a href="">기타</a></div>
+							</div>
+							<a href="">자세히 보기</a>
+						</li>
+						<li>
+							<h3>사회공헌 공시실</h3>
+							<p class="notosanskr">사회의 지속가능한 발전에 기여하기 위해 수행한 사회공헌 활동 내역입니다.</p>
+							<div class="box-center">
+								<div class="noticeRomm-contents-box"><a href="">2019년도</a></div>
+								<div class="noticeRomm-contents-box"><a href="">2018년도</a></div>
+							</div>
+							<a href="">자세히 보기</a>
+						</li>
+					</ul>
+				</article>
+
+				<article id="noticeRomm-number">
+					<h3>공시자료 작성, 관리 및 주관부서 연락처</h3>
+					<p class="notosanskr">
+						본 상품 공시실에 공시되는 내용은 아래의 담당부서에서 작성하고 있으며, 관련부서의 검수를 받아 홈페이지에 게시되고 있습니다.
+					</p>
+
+					<table>
+						<caption>주관부서 연락처</caption>
+						<colgroup>
+							<col style="width:33.33%">
+							<col style="width:33.33%">
+							<col style="width:33.33%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="col">구분</th>
+								<th scope="col">담당부서</th>
+								<th scope="col">연락처</th>
+							</tr>
+							<tr>
+								<td rowspan="4">전체보험공시</td>
+								<td>상품팀 : 보장상품P</td>
+								<td class="center">02-2074-2420</td>
+							</tr>
+							<tr>
+								<td>상품팀 : 특화상품p</td>
+								<td class="center">02-2074-2430</td>
+							</tr>
+							<tr>
+								<td>상품팀 : 건강상품P</td>
+								<td class="center">02-2074-2440</td>
+							</tr>
+							<tr>
+								<td>전략지원팀 : 전략상품계리P</td>
+								<td class="center">02-715-8317</td>
+							</tr>
+							<tr>
+								<td>전체보험공시</td>
+								<td>CPC기획팀</td>
+								<td class="center">02-715-8783</td>
+							</tr>
+							<tr>
+								<td>펀드공시</td>
+								<td>WM사업부</td>
+								<td class="center">02-569-1642</td>
+							</tr>
+							<tr>
+								<td>변액보험</td>
+								<td>특별계정사업부</td>
+								<td class="center">02-2259-7871</td>
+							</tr>
+							<tr>
+								<td>퇴직보험/퇴직연금</td>
+								<td>전략투자사업부 : 퇴직계정운용부</td>
+								<td class="center">02-2095-5495</td>
+							</tr>
+							<tr>
+								<td>계약자배당관련</td>
+								<td>계리RM팀</td>
+								<td class="center">02-772-6806</td>
+							</tr>
+							<tr>
+								<td>보호금융상품등록부</td>
+								<td>상품팀 : 상품 Pricing파트</td>
+								<td class="center">02-772-6576</td>
+							</tr>
+							<tr>
+								<td>방카슈랑스수수료율공시</td>
+								<td>BA 사업부</td>
+								<td class="center">02-2259-7286</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</article>
+			</div>
+
+			<aside class="right-sideBar">
+			<ul>
+				<li><a href="noticeRoom.html">공시실 메인</a></li>
+				<li><a href="">경영 공시실</a></li>
+				<li><a href="">상품 공시실</a></li>
+				<li><a href="">변액 보험 공시실</a></li>
+				<li><a href="">보험 가격 공시실</a></li>
+				<li><a href="">방카슈랑스 공시실</a></li>
+				<li><a href="">보호금융 상품등록부</a></li>
+				<li><a href="">신탁관련 공시</a></li>
+				<li><a href="">사회공헌 공시실</a></li>
+
+			</ul>
+		</aside>
+		</div>
+
+	</section>
+
+	<footer id="main-footer">
+		<div id="footer-service">
+			<div id="footer-service-inner">
+				<h4>블루라이프 생명은 언제나 고객님과 함께합니다.</h4>
+				<h3>고객센터 1577 -  1577</h3>
+				<table>
+					<tr>
+						<th  class="notosanskr">평일</th>
+						<td  class="notosanskr">오전9시 ~ 오후9시</td>
+					</tr>
+					<tr>
+						<th  class="notosanskr">공휴일</th>
+						<td  class="notosanskr">오전10시 ~ 오후3시</td>
+					</tr>
+				</table>
+				<p class="notosanskr">홈페이지에서 365일 24시간 보험가입이 가능합니다.</p>
+			</div>
+		</div>
+		<div id="footer-bar">
+			<ul id="footer-bar-nav">
+				<li><a href="noticeRoom.html">공시실 바로가기</a></li>
+				<li><a href="">마케팅 동의</a></li>
+				<li><a href="">가입설계동의</a></li>
+				<li><a href="">개인정보처리방침</a></li>
+				<li><a href="">금융소비자정보포털</a></li>
+				<li><a href="">전자민원접수</a></li>
+			</ul>
+		</div>
+		<div id="footer-inner">
+			<div id="footer-inner-content1">
+				<ul>
+					<li class="footer-inner-tit"><a href="">회원권리안내</a></li>
+					<li><a href="">이용약관</a></li>
+					<li><a href="">전자금융거래기본약관</a></li>
+					<li><a href=""><span>개인정보취급방침</span></a></li>
+					<li><a href=""><span>개인정보처리방침</span></a></li>
+					<li><a href="">신용정보활용체제</a></li>
+					<li><a href="">이용,제공조회</a></li>
+					<li><a href="">금리인하요구권</a></li>
+					<li class="last"><a href="">대출계약철회권</a></li>
+				</ul>
+
+				<ul>
+					<li class="footer-inner-tit"><a href="">불 만 / 신 고</a></li>
+					<li><a href="">전자민원접수</a></li>
+					<li><a href="">펀드판매관련분편신고센터</a></li>
+					<li><a href="">보험범죄신고센터</a></li>
+					<li><a href="">대출모집인</a></li>
+					<li><a href="">과장광고신고</a></li>
+					<li><a href="">서민금융119</a></li>
+					<li><a href="">장애인보험가입차변신고센터</a></li>
+					<li class="last"><a href="">E금융민원센터</a></li>
+				</ul>
+
+				<ul>
+					<li class="footer-inner-tit"><a href="">안내/유의사항</a></li>
+					<li><a href="">공시실</a></li>
+					<li><a href="">사회공헌공시실</a></li>
+					<li><a href="">채권추심업무 처리정차안내</a></li>
+					<li><a href="">보호금융상품등록부</a></li>
+					<li><a href="">휴면/분할(만기)보험금조회</a></li>
+					<li><a href="">공인인증센터</a></li>
+					<li><a href="">사이트맵</a></li>
+					<li class="last"><a href="">ENGLISH</a></li>
+				</ul>
+			</div>
+
+			<div id="footer-inner-content2">
+				<div id="footer-company-information">
+					<p>블루라이프생명(주) 대표이사 : 이명호 사업자등록번호 : 107-88-01234</p>
+					<address>
+						서울시 영등포구 국제금융로6길 11 블루빌딩 (07330)<br>
+						COPYRIGHT © BLUE  LIFEPLANET LIFE INSURANCE COMPANY ALL RIGHTS RESERVED.
+					</address>
+				</div>
+				<ul>
+					<li><img src="images/footer-icon1.png" alt=""></li>
+					<li><img src="images/footer-icon2.png" alt=""></li>
+					<li><img src="images/footer-icon3.png" alt=""></li>
+					<li><img src="images/footer-icon4.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	</body>
+
+</html>

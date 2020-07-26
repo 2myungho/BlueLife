@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>블루라이프생명 메인페이지</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/nav-footer.css">
+		<!--[if lt IE9]>
+			<script src="html5shiv-master/dist/html5shiv.js"></script>
+		<![endif]--->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/modernizr.custom.48669.js"></script>
+		<script src="js/swipe.js"></script>
+		<script src="js/respond.src.js"></script>
+
+	</head>
+	<body>
+	<!--<header id="main-header">-->
+		<div id="header-inner">
+			<h1 class="main-logo">
+				<a href="main.html"><img src="images/top-logo.png" alt="블루라이프생명로고"></a>
+			</h1>
+			<a href="#" class="main-nav-3bar"><img src="images/main-3bar.png" alt=""></a>
+			<ul id="gnb">
+				<li><a href="#">로그인</a></li>
+				<li><a href="#">마이페이지</a></li>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">인증센터</a></li>
+				<li><a href="noticeRoom.html">공시실</a></li>
+				<!--<li>
+					<select>
+						<option value="">공시실 안내</option>
+						<option value="">경영공시실</option>
+						<option value="">상품공시실</option>
+						<option value="">변액보험공시실</option>
+						<option value="">보험가격공시실</option>
+						<option value="">방카슈랑스공시실</option>
+						<option value="">보호금융상품등록부</option>
+						<option value="">신탁관련공시</option>
+						<option value="">사회공헌공시실</option>
+					</select>
+				</li>-->
+				<li>
+					<div id="main-search">
+						<a href="" class="main-serch-box"><img src="images/nav-icon.png"></a>
+						<div id="main-search-all">
+							<input type="search" id="main-search" name="main-search" placeholder="검색어를 입력하세요.">
+							<input type="submit" value="검색">
+							<ul>
+								<li class="main-search-tit"><a href="#">자주찾는 검색어</a></li>
+								<li><a href="#">해지</a></li>
+								<li><a href="#">약관</a></li>
+								<li><a href="2030.html">2030보험</a></li>
+								<li><a href="#">종신보험</a></li>
+								<li><a href="#">가입</a></li>
+								<li><a href="#">설계</a></li>
+								<li><a href="#">계약</a></li>
+								<li><a href="#">청약</a></li>
+							</ul>
+							<a href="" class="main-serch-close">검색창 닫기</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<nav id="lnb">
+				<ul>
+					<li>
+						<a href="sub.html">보험상품</a>
+
+					</li>
+
+					<li>
+						<a href="#">금융상품</a>
+					</li>
+
+					<li>
+						<a href="#">퇴직연금</a>
+
+					</li>
+
+					<li>
+						<a href="#">고객혜택</a>
+
+					</li>
+
+					<li>
+						<a href="service-center.html">고객센터</a>
+
+					</li>
+				</ul>
+				<div id="allmenu">
+					<div class="all-center-box">
+						<!--<form method="post">
+							<input type="search" id="main-search" name="main-search">
+							<input type="submit" value="검색">
+						</form>-->
+						<ul>
+							<li class="all-tit">
+								<input type="search" id="main-all-search" name="main-search" placeholder="검색어를 입력하세요.">
+								<input type="submit" value="검색">
+							</li>
+						</ul>
+						<ul>
+							<li class="all-tit">
+								<a href="sub.html">보험상품</a>
+								<ul>
+									<li class="none"><a href="sub.html">보험상품 메인</a></li>
+									<li><a href="2030.html">2030보험</a>
+									<li><a href="#">종신/정기</a></li>
+									<li><a href="#">치아, 암, 건강</a></li>
+									<li><a href="#">노후대비</a></li>
+									<li><a href="#">여행/원데이 보험</a></li>
+									<li><a href="#">반려동물 보험</a></li>
+									<li><a href="#">어린이 보험</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li class="all-tit">
+								<a href="#">금융상품</a>
+								<ul>
+									<li class="none"><a href="#">금융상품 메인</a></li>
+									<li><a href="#">대출</a></li>
+									<li><a href="#">펀드</a></li>
+									<li><a href="#">신탁</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li class="all-tit">
+								<a href="#">퇴직연금</a>
+								<ul>
+									<li class="none"><a href="#">퇴직연금 메인</a></li>
+									<li><a href="#">퇴직연금 안내</a></li>
+									<li><a href="#">퇴직연금 서비스</a></li>
+									<li><a href="#">퇴직연금 상품</a></li>
+									<li><a href="#">이용 가이드</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li class="all-tit">
+								<a href="#">고객혜택</a>
+								<ul>
+									<li class="none"><a href="#">고객혜택 메인</a></li>
+									<li><a href="#">이벤트</a></li>
+									<li><a href="#">이벤트 안내</a></li>
+									<li><a href="#">당첨자 발표</a></li>
+									<li><a href="#">건강관리서비스</a></li>
+									<li><a href="#">VIP서비스</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li class="all-tit">
+								<a href="service-center.html">고객센터</a>
+								<ul>
+									<li class="none"><a href="#">고객센터 메인</a></li>
+									<li><a href="#">자주 찾는 매장</a></li>
+									<li><a href="#">고객의 소리</a></li>
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">보험금 신청 안내</a></li>
+									<li><a href="#">기타 안내</a></li>
+									<li><a href="#">필수 서류 안내</a></li>
+									<li><a href="#">ARS안내</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+<!----------------------------------------------------->
+	<section id="main-content">
+		<div id="main-top-content">
+			<article id="main-top-rolling">
+				<div class="main-rolling main-top-img1">
+					<img src="image/main-top-img.png" alt="" class="main-desktopsize">
+					<img src="image/main-phonesize.png" alt="" class="main-phonesize">
+					<!--<img src="image/main-phonesize3.png" alt="" class="main-phonesize">-->
+					<div class="top-right-box top-right-box-1">
+						<h3>우리의 이름이<br>당신의 삶이 되도록</h3>
+						<h2>블루라이프생명</h2>
+						<p class="View-text"><a href="#">상세보기 ></a></p>
+					</div>
+				</div>
+
+				<div class="main-rolling main-top-img2">
+					<img src="image/main-top-img4.png" alt=""  class="main-desktopsize">
+					<img src="image/main-phonesize2.png" alt="" class="main-phonesize">
+					<div class="top-right-box top-right-box2">
+						<h3>당신의 라이프는<br>멋진 일로 가득하다!</h3>
+						<h2>블루라이프생명</h2>
+						<p class="View-text"><a href="#">상세보기 ></a></p>
+					</div>
+				</div>
+	<!------------------------------------------------------------>
+
+	<!-------------------------------------------------------->
+
+			</article>
+			<div id="arrow">
+					<a href="#" class="prev" onclick="return false">
+						<img src="images/rolling-left.png" alt="이전">
+					</a>
+
+					<a href="#" class="next" onclick="return false">
+						<img src="images/rolling-right.png" alt="다음">
+					</a>
+			</div>
+
+			<ul id="content-top_roll">
+				<li>
+					<img  class="firstactive" src="images/rolling-on.png" alt="활성화상태">
+				</li>
+				<li>
+					<img class="secondative" src="images/rolling-off.png" alt="비활성화상태">
+				</li>
+			</ul>
+
+			<div id="main-guidance">
+				<p>
+					<div class="display-table">
+						신한금융지주와의 포괄적 주식교환으로 인한 세금 안내
+						<img src="images/right-checkbar.png" alt="" class="right-checkbar"><br>
+						<span class=" notosanskr">주식교환 또는 주식매수청구권 행사로 인한 소득세, 범인세 및 증권거래세에 대하여 안내해 드립니다. 자세한 내용은 본문을 확인해주시기 바랍니다.</span>
+					</div>
+				</p>
+			</div>
+
+		<!--</div>-->
+
+		<div id="main-3icon-box"></div>
+		<div id="content-inner">
+			<article id="main-product">
+				<h2>상품카테고리</h2>
+
+				<ul id="main-tab">
+					<li><a href="#" title="main-tab1">건강관련보험</a></li>
+					<li><a href="#" title="main-tab2">2030인기보험</a></li>
+					<li><a href="#" title="main-tab3">목돈마련보험</a></li>
+				</ul>
+
+				<div id="main-tab-product">
+					<div id="main-tab1">
+						<ul class="main-product-img">
+							<li>
+								<a href="2030.html">
+									<img src="image/main-2030.png" alt="2030 보험">
+									<h3>2030 보험</h3>
+									<p>
+										“건강한 2030대를 보내<br>
+										든든한 미래의 밑거름이 될 수 있도록<br>
+										준비하세요!”<br>
+									</p>
+									<span class="main-product-caption"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="image/main-life.png" alt="종신 / 정기">
+									<h3>종신 / 정기</h3>
+									<p>
+										"갑작스러운 위험으로 부터<br>
+										사랑하는 가족들의 불확실한 미래를<br>
+										지켜주기 위해 대비하세요."
+									</p>
+									<span class="main-product-caption"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="image/main-health.png" alt="치아 암 건강">
+									<h3>치아 암 건강</h3>
+									<p>"중대질병 뿐만 아니라 다양한 위험에 대비한<br>
+									치료비, 생활비를 준비하세요."</p>
+									<span class="main-product-caption"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="image/main-child.png" alt="어린이 보험">
+									<h3>어린이 보험</h3>
+									<p>"임신과 출산, 아이의 건강과<br> 미래까지 준비하세요."</p>
+									<span class="main-product-caption"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div id="main-tab2">
+						<ul class="main-product-img">
+							<li>
+								<a href="2030.html">
+									<img src="image/main-2030.png" alt="2030 보험">
+									<h3>2030 보험</h3>
+									<p>
+										“건강한 2030대를 보내<br>
+										든든한 미래의 밑거름이 될 수 있도록<br>
+										준비하세요!”<br>
+									</p>
+									<p></p>
+									<span class="main-product-caption"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="image/main-drive.png" alt="원데이 운전자 보험">
+									<h3>원데이 운전자 보험</h3>
+									<p>
+										"스트레스를 날리는 드라이브!<br>
+										스트레스 걱정없이<br> 신나게 즐기고 싶으신가요?"
+									</p>
+									<span class="main-product-caption"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="image/main-child.png" alt="어린이 보험">
+									<h3>어린이 보험</h3>
+									<p>"임신과 출산, 아이의 건강과<br> 미래까지 준비하세요."</p>
+									<span class="main-product-caption"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="image/main-pet.png" alt="반려동물 보험">
+									<h3>반려동물 보험</h3>
+									<p>
+										"갑작스러운 위험으로 부터<br>
+										가족같은 반려동물의<br>
+										건강을 지켜주기 위해 대비하세요.
+									</p>
+									<span class="main-product-caption"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="image/main-travel.png" alt="여행자 보험">
+									<h3>여행자 보험</h3>
+									<p>
+										"즐거운 여행중<br>
+										상해, 소지품 분실, 식중독 등의<br>
+										위험으로 부터 대비하세요."
+									</p>
+									<span class="main-product-caption"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div id="main-tab3">
+						<ul class="main-product-img">
+							<li>
+								<a href="#">
+									<img src="image/main-life.png" alt="종신 / 정기">
+									<h3>종신 / 정기</h3>
+									<p>
+										"갑작스러운 위험으로 부터<br>
+										사랑하는 가족들의 불확실한 미래를<br>
+										지켜주기 위해 대비하세요."
+									</p>
+									<span class="main-product-caption"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="image/main-health.png" alt="치아 암 건강">
+									<h3>치아 암 건강</h3>
+									<p>"중대질병 뿐만 아니라 다양한 위험에 대비한<br>
+									치료비, 생활비를 준비하세요."</p>
+									<span class="main-product-caption"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="image/main-oldage.png" alt="노후대비">
+									<h3>노후대비</h3>
+									<p>
+										"경제활동기에는 사망보장을,<br>
+										은퇴이후에는<br>
+										안정적인 노후생활을 준비하세요."
+									</p>
+									<span class="main-product-caption"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+			<div class="benefits-bar">
+				<a href="#">블루라이프생명 혜택 바로가기
+					<img src="images/right-checkbar.png" class="right-checkbar">
+				</a>
+			</div>
+
+			<article id="main-content-bottom">
+				<div id="main-content-bottom-tit">
+					<p>보험관련지식</p>
+					<a href="">보험관련지식 더보기
+						<img src="images/right-checkbar.png" class="right-checkbar">
+					</a>
+				</div>
+
+				<div id="main-content-basic">
+					<ul>
+						<li>
+							<a href="#"><img src="image/main-basic1.png" alt="보험회사가 돈버는 방법"></a>
+							<p><a href="#">보험회사가 돈을 버는 방법</a></p>
+						</li>
+						<li>
+							<a href="#"><img src="image/main-basic2.png" alt="보험회사가 돈버는 방법"></a>
+							<p><a href="#">적금 대신 종신보험을 가입해야 하는 이유</a></p>
+						</li>
+						<li>
+							<a href="#"><img src="image/main-basic3.png" alt="보험회사가 돈버는 방법"></a>
+							<p><a href="#">보험으로 돈 벌 수 있나요?</a></p>
+						</li>
+					</ul>
+				</div>
+
+				<div id="main-bottom-news">
+					<div class="main-bottom-newsbox">
+						<ul>
+							<li class="main-new-tit">
+								<a href="">공지사항 <img src="images/plus-icon.png" alt=""></a>
+							</li>
+							<li><a href="">(01/26) 신용정보주체의 대응권 운용 시행</a></li>
+							<li><a href="">(01.12.) 정기시스템 일시적인 중단 안내</a></a></li>
+							<li><a href="">2019년 12월 고객플라자 운영 중단 안내(6개)</a></li>
+							<li><a href="">금리인하 요구권 법제화 안내</a></li>
+							<li><a href="">전자금융서비스 이용약관 변경 안내</a></li>
+							<li><a href="">(11.12.) 정기시스템 일시적인 중단 안내</a></li>
+						</ul>
+					</div>
+
+					<div class="main-bottom-newsbox">
+						<ul>
+							<li class="main-new-tit">
+								<a href="">안내 / 유의사항 <img src="images/plus-icon.png" alt=""></a>
+							</li>
+							<li><a href="">금융주소 한번에 서비스</a></li>
+							<li><a href="">피싱주의 안내</a></li>
+							<li><a href="">노후실손의료보험</a></li>
+							<li><a href="">채권 추심업무 처리절차 안내</a></li>
+							<li><a href="">유량체 건강검진신청 / 결과조회</a></li>
+							<li><a href="">개인정보 필수체크사항 10가지</a></li>
+						</ul>
+					</div>
+
+					<div class="main-bottom-newsbox">
+						<ul>
+							<li class="main-new-tit">
+								<a href="">각종신고 정보 <img src="images/plus-icon.png" alt=""></a>
+							</li>
+							<li><a href="">펀드판매 불편신고</a></li>
+							<li><a href="">서민금융 1332</a></li>
+							<li><a href="">E-금융민원센터</a></li>
+							<li><a href="">보험범죄</a></li>
+							<li><a href="">대출과장광고신고</a></li>
+							<li><a href="">장애인보험 가입차별 신고센터</a></li>
+						</ul>
+					</div>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<footer id="main-footer">
+		<div id="footer-service">
+			<div id="footer-service-inner">
+				<h4>블루라이프 생명은 언제나 고객님과 함께합니다.</h4>
+				<h3>고객센터 1577 -  1577</h3>
+				<table>
+					<tr>
+						<th  class="notosanskr">평일</th>
+						<td  class="notosanskr">오전9시 ~ 오후9시</td>
+					</tr>
+					<tr>
+						<th  class="notosanskr">공휴일</th>
+						<td  class="notosanskr">오전10시 ~ 오후3시</td>
+					</tr>
+				</table>
+				<p class="notosanskr">홈페이지에서 365일 24시간 보험가입이 가능합니다.</p>
+			</div>
+		</div>
+		<div id="footer-bar">
+			<ul id="footer-bar-nav">
+				<li><a href="noticeRoom.html">공시실 바로가기</a></li>
+				<li><a href="">마케팅 동의</a></li>
+				<li><a href="">가입설계동의</a></li>
+				<li><a href="">개인정보처리방침</a></li>
+				<li><a href="">금융소비자정보포털</a></li>
+				<li><a href="">전자민원접수</a></li>
+			</ul>
+		</div>
+		<div id="footer-inner">
+			<div id="footer-inner-content1">
+				<ul>
+					<li class="footer-inner-tit"><a href="">회원권리안내</a></li>
+					<li><a href="">이용약관</a></li>
+					<li><a href="">전자금융거래기본약관</a></li>
+					<li><a href=""><span>개인정보취급방침</span></a></li>
+					<li><a href=""><span>개인정보처리방침</span></a></li>
+					<li><a href="">신용정보활용체제</a></li>
+					<li><a href="">이용,제공조회</a></li>
+					<li><a href="">금리인하요구권</a></li>
+					<li class="last"><a href="">대출계약철회권</a></li>
+				</ul>
+
+				<ul>
+					<li class="footer-inner-tit"><a href="">불 만 / 신 고</a></li>
+					<li><a href="">전자민원접수</a></li>
+					<li><a href="">펀드판매관련분편신고센터</a></li>
+					<li><a href="">보험범죄신고센터</a></li>
+					<li><a href="">대출모집인</a></li>
+					<li><a href="">과장광고신고</a></li>
+					<li><a href="">서민금융119</a></li>
+					<li><a href="">장애인보험가입차변신고센터</a></li>
+					<li class="last"><a href="">E금융민원센터</a></li>
+				</ul>
+
+				<ul>
+					<li class="footer-inner-tit"><a href="">안내/유의사항</a></li>
+					<li><a href="">공시실</a></li>
+					<li><a href="">사회공헌공시실</a></li>
+					<li><a href="">채권추심업무 처리정차안내</a></li>
+					<li><a href="">보호금융상품등록부</a></li>
+					<li><a href="">휴면/분할(만기)보험금조회</a></li>
+					<li><a href="">공인인증센터</a></li>
+					<li><a href="">사이트맵</a></li>
+					<li class="last"><a href="">ENGLISH</a></li>
+				</ul>
+			</div>
+
+			<div id="footer-inner-content2">
+				<div id="footer-company-information">
+					<p>블루라이프생명(주) 대표이사 : 이명호 사업자등록번호 : 107-88-01234</p>
+					<address>
+						서울시 영등포구 국제금융로6길 11 블루빌딩 (07330)<br>
+						COPYRIGHT © BLUE  LIFEPLANET LIFE INSURANCE COMPANY ALL RIGHTS RESERVED.
+					</address>
+				</div>
+				<ul>
+					<li><img src="images/footer-icon1.png" alt=""></li>
+					<li><img src="images/footer-icon2.png" alt=""></li>
+					<li><img src="images/footer-icon3.png" alt=""></li>
+					<li><img src="images/footer-icon4.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	</body>
+
+</html>

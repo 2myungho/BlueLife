@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>2030보험 페이지</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/2030.css">
+		<link rel="stylesheet" href="css/nav-footer.css">
+		<!--[if lt IE9]>
+			<script src="html5shiv-master/dist/html5shiv.js"></script>
+		<![endif]--->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/modernizr.custom.48669.js"></script>
+		<script src="js/swipe.js"></script>
+		<script src="js/respond.src.js"></script>
+
+		<script>
+			$(function(){
+				$('.right-sideBar ul li a').eq(1).attr('class','right-sideBar-basic');
+				$('.right-sideBar ul li a').click(function(){
+					$('.right-sideBar ul li a').removeClass('right-sideBar-basic');
+					$('this').addClass('right-sideBar-basic');
+				});
+			});
+		</script>
+
+
+	</head>
+	<body>
+	<!--<header id="main-header">-->
+		<div id="header-inner">
+			<h1 class="main-logo">
+				<a href="main.html"><img src="images/top-logo.png" alt="블루라이프생명로고"></a>
+			</h1>
+			<a href="#" class="main-nav-3bar"><img src="images/main-3bar.png" alt=""></a>
+			<ul id="gnb">
+				<li><a href="#">로그인</a></li>
+				<li><a href="#">마이페이지</a></li>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">인증센터</a></li>
+				<li><a href="noticeRoom.html">공시실</a></li>
+				<!--<li>
+					<select>
+						<option value="">공시실 안내</option>
+						<option value="">경영공시실</option>
+						<option value="">상품공시실</option>
+						<option value="">변액보험공시실</option>
+						<option value="">보험가격공시실</option>
+						<option value="">방카슈랑스공시실</option>
+						<option value="">보호금융상품등록부</option>
+						<option value="">신탁관련공시</option>
+						<option value="">사회공헌공시실</option>
+					</select>
+				</li>-->
+				<li>
+					<div id="main-search">
+						<a href="" class="main-serch-box"><img src="images/nav-icon.png"></a>
+						<div id="main-search-all">
+							<input type="search" id="main-search" name="main-search" placeholder="검색어를 입력하세요.">
+							<input type="submit" value="검색">
+							<ul>
+								<li class="main-search-tit"><a href="#">자주찾는 검색어</a></li>
+								<li><a href="#">해지</a></li>
+								<li><a href="#">약관</a></li>
+								<li><a href="2030.html">2030보험</a></li>
+								<li><a href="#">종신보험</a></li>
+								<li><a href="#">가입</a></li>
+								<li><a href="#">설계</a></li>
+								<li><a href="#">계약</a></li>
+								<li><a href="#">청약</a></li>
+							</ul>
+							<a href="" class="main-serch-close">검색창 닫기</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<nav id="lnb">
+				<ul>
+					<li>
+						<a href="sub.html">보험상품</a>
+
+					</li>
+
+					<li>
+						<a href="#">금융상품</a>
+					</li>
+
+					<li>
+						<a href="#">퇴직연금</a>
+
+					</li>
+
+					<li>
+						<a href="#">고객혜택</a>
+
+					</li>
+
+					<li>
+						<a href="service-center.html">고객센터</a>
+
+					</li>
+				</ul>
+				<div id="allmenu">
+					<div class="all-center-box">
+						<!--<form method="post">
+							<input type="search" id="main-search" name="main-search">
+							<input type="submit" value="검색">
+						</form>-->
+						<ul>
+							<li class="all-tit">
+								<input type="search" id="main-all-search" name="main-search" placeholder="검색어를 입력하세요.">
+								<input type="submit" value="검색">
+							</li>
+						</ul>
+						<ul>
+							<li class="all-tit"><a href="sub.html">보험상품</a>
+								<ul>
+									<li class="none"><a href="sub.html">보험상품 메인</a>
+									<li><a href="2030.html">2030보험</a>
+									<li><a href="#">종신/정기</a></li>
+									<li><a href="#">치아, 암, 건강</a></li>
+									<li><a href="#">노후대비</a></li>
+									<li><a href="#">여행/원데이 보험</a></li>
+									<li><a href="#">반려동물 보험</a></li>
+									<li><a href="#">어린이 보험</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li class="all-tit"><a href="#">금융상품</a>
+								<ul>
+									<li class="none"><a href="#">금융상품 메인</a></li>
+									<li><a href="#">대출</a></li>
+									<li><a href="#">펀드</a></li>
+									<li><a href="#">신탁</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li class="all-tit"><a href="#">퇴직연금</a>
+								<ul>
+									<li class="none"><a href="#">퇴직연금 메인</a></li>
+									<li><a href="#">퇴직연금 안내</a></li>
+									<li><a href="#">퇴직연금 서비스</a></li>
+									<li><a href="#">퇴직연금 상품</a></li>
+									<li><a href="#">이용 가이드</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li class="all-tit"><a href="#">고객혜택</a>
+								<ul>
+									<li class="none"><a href="#">고객혜택 메인</a></li>
+									<li><a href="#">이벤트</a></li>
+									<li><a href="#">이벤트 안내</a></li>
+									<li><a href="#">당첨자 발표</a></li>
+									<li><a href="#">건강관리서비스</a></li>
+									<li><a href="#">VIP서비스</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li class="all-tit"><a href="service-center.html">고객센터</a>
+								<ul>
+									<li class="none"><a href="#">고객센터 메인</a></li>
+									<li><a href="#">자주 찾는 매장</a></li>
+									<li><a href="#">고객의 소리</a></li>
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">보험금 신청 안내</a></li>
+									<li><a href="#">기타 안내</a></li>
+									<li><a href="#">필수 서류 안내</a></li>
+									<li><a href="#">ARS안내</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<section id="sub-content">
+		<div class="sub-top-content">
+			<article class="sub-top-inner">
+				<p class="location">
+					<a href="main.html">메인</a> <span>></span>
+					<a href="sub.html">보험상품</a><span>></span>
+					<a href="2030.html">2030</a>
+				</p>
+				<div id="sub-top-leftBox">
+					<h2>2030보험</h2>
+					<p>
+						필요한 건 다 담았다!<br>
+						건강한 20대를 보내고<br>
+						든든한 미래의 밑거름이 될 수 있도록 준비하세요!
+					</p>
+					<a href="#" class="sub-top-titBox">상담하기</a>
+					<a href="#" class="sub-top-titBox">공유하기</a>
+				</div>
+				<div id="sub-top-rightBox">
+					<p>생년월일만으로</p>
+					<h3>보험료 계산이 한번에!</h3>
+					<form>
+						<input type="text" placeholder="생년월일(예: 950423)" id="sub-Birthday">
+						<label for="sub-Birthday"></label>
+
+						<label for="sub-gender"></label>
+						<input type="radio" id="radio1" value="man" name="sub-gender" checked>
+						<label for="radio1">남자</label>
+						<input type="radio" id="radio2" value="girl" name="sub-gender">
+						<label for="radio2">여자</label>
+
+						<input type="submit" value="보험료 계산하기">
+					</form>
+
+				</div>
+			</article>
+		</div>
+
+		<div id="sub-content-inner">
+			<div id="sub-content-left">
+				<article id="product-2030">
+					<section id="tab-all-2030">
+						<ul>
+							<li><a href="" title="productKind">어떤 상품인가요?</a></li>
+							<li><a href="" title="guarantee">무엇을 보장해주나요?</a></li>
+							<li><a href="" title="productPrice">보험료는 어떻게 되나요?</a></li>
+						</ul>
+					</section>
+
+					<div id="sub-tab-production">
+						<section id="productKind">
+							<ul>
+								<li>
+									<h3>#학업</h3>
+									<h4>
+										공부하는게 가장 쉬운 당신!<br>
+										다쳐서 또는 아파서 학업을 계속 못할까 걱정되시나요?
+									</h4>
+									<ul class="productKind-textBox">
+										<li>
+											<img src="images/2030-study1.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												상해로 50% 이상 후유장애 발생한 경우<br>
+												<span>- 50만원씩 교육자금 10년동안 매월 지급</span>
+											</p>
+										</li>
+
+										<li>
+											<img src="images/2030-study2.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												질병으로 50% 이상 후유장애 발생한 경우<br>
+												<span>- 50만원씩 교육자금 10년동안 매월 지급</span>
+											</p>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<h3>#JOB</h3>
+									<h4>
+										바늘구멍 취업성공!<br>
+										BUT 간당간당 회사생활 걱정 되시나요?
+									</h4>
+									<ul class="productKind-textBox">
+										<li>
+											<img src="images/2030-company1.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												상해 또는 질병으로 인하여 실업상태가 된 경우<br>
+												<span>- 고용보험에서 구직급여를 수령받는 경우,100만원 지급</span>
+											</p>
+										</li>
+
+										<li>
+											<img src="images/2030-company2.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												해고등의 이유로 실직하고, 고용보험에서 구직급여를 받는 경우<br>
+												<span>- 구직급여수령 31일째, 61일쩨 20만원 지급</span>
+											</p>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<h3>#레저</h3>
+									<h4>
+										나의 힐링포인트 레저활동!<br>
+										수영, 스키, 골프 등 걱정없이 즐기고 싶나요?
+									</h4>
+									<ul class="productKind-textBox">
+										<li>
+											<img src="images/2030-leisure1.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												수영, 테니스, 낚시 등 레저활동 중 상해로 사망하거나 후유장애 발생시<br>
+												<span>- 사망시/80%이상 후유장애시 5,000만원 지급</span>
+											</p>
+										</li>
+
+										<li>
+											<img src="images/2030-leisure2.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												등산, 스키, 축구 등 상해로 사망하거나 후유장애 발생시<br>
+												<span>- 사망시, 80%이상 후유장애시 5,000만원 지급</span>
+											</p>
+										</li>
+
+										<li>
+											<img src="images/2030-leisure3.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												상해로 수술을 받은 경우<br>
+												<span>- 일반상해수술비 50만원 지급</span>
+											</p>
+										</li>
+
+										<li>
+											<img src="images/2030-leisure4.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												상해 또는 질병으로 깁스 치료를 받은 경우<br>
+												<span>- 깁스 시 동일사고당 10만원 지급(부목치료제외)</span>
+											</p>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<h3>#건강</h3>
+									<h4>
+										당신의 겅강은 안녕하신가요?<br>
+										매일 야근에 밤샘공부.... 건강이 걱정되시나요?
+									</h4>
+									<ul class="productKind-textBox">
+										<li>
+											<img src="images/2030-health1.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												암으로 진단 확정이 된 경우<br>
+												<span>- 최초 1회에 한하여 1,000만원 지급(유사암의 경우 10% 지급)</span>
+											</p>
+										</li>
+
+										<li>
+											<img src="images/2030-health2.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												뇌출혈 또는 급성심근경색으로 진단 확정 된 경우<br>
+												<span>- 감액기간 없이,진단금 2.000만원 지급(각각 최초1회)</span>
+											</p>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<h3>#뷰티</h3>
+									<h4>
+										거울아 거울아 누가 제일 이쁘니?!<br>
+										어여쁜 나의 외모. 흉터 남을까 걱정 되시나요?
+									</h4>
+									<ul class="productKind-textBox">
+										<li>
+											<img src="images/2030-beauty1.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												상해로 치료받았으나, 외형상 반흔이나 추상장애 등이 남은 경우<br>
+												<span>- 얼굴부분 : 1cm당 14만원, 상지/하지 : 수술1cm당 7만원 (단 3cm이상) 지급</span>
+											</p>
+										</li>
+
+										<li>
+											<img src="images/2030-beauty2.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												질병으로 영구치 발거를 진단받고, 해당 영구치에 치아보철치료를 하는 경우<br>
+												<span>- 일플란트(25만원), 브릿지(25만원), 틀니(50만원)지원</span>
+											</p>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<h3>#운전</h3>
+									<h4>
+										스트레스를 날리는 드라이브!<br>
+										스트레스 걱정없이 신나게 증기고 싶으신가요?
+									</h4>
+									<ul class="productKind-textBox">
+										<li>
+											<img src="images/2030-drive1.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												교동사고로 골절, 타박상, 뇌손상 등의 상해를 입은 경우<br>
+												<span>- 상해등급에 따라 최대 500만원 지급</span>
+											</p>
+										</li>
+
+										<li>
+											<img src="images/2030-drive2.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												운전중 사고로 변호사 선임비용이 발생하거나 벌금형을 받은 경우<br>
+												<span>- 변호사선임비용 500만원, 벌금 2,000만원 한도로 지급</span>
+											</p>
+										</li>
+
+										<li>
+											<img src="images/2030-drive3.png" alt="" class="productKind-icon">
+											<p class="notosanskr">
+												운전중 사고로 타인이 사망하거나 부상을 입은 경우<br>
+												<span>- 진단일 또는 상해급수에 따라 최대 3,000만원 한도로 지급</span>
+											</p>
+										</li>
+									</ul>
+								</li>
+							</ul>
+
+							<form method="post">
+								<input type="submit" value="상담신청">
+								<input type="submit" value="보험료 계산">
+							</form>
+
+							<article id="subscription">
+								<h3>2030 보험 가입후기
+									<a href="#">가입후기 더보기<img src="images/right-checkbar.png" alt=""></a>
+								</h3>
+								<ul>
+									<li>
+										<h4>2030보험</h4>
+										<p class="subscription-contents">
+											인터넷으로 가입이 가능해서
+											간단하고 좋아요.
+											비흠연체라 보험비도
+											다운되서 좋아요
+										</p>
+										<p class="subscription-grade">
+											평점<span>10.0</span>
+										</p>
+										<p class="subscription-name">
+											문*희 / 26세 / 여자
+										</p>
+									</li>
+
+									<li>
+										<h4>2030보험</h4>
+										<p class="subscription-contents">
+											빠르고 편한 가입절차가
+											좋네요.
+											필요한 보험만 고를 수 있어서
+											맘에들어요.
+										</p>
+										<p class="subscription-grade">
+											평점<span>10.0</span>
+										</p>
+										<p class="subscription-name">
+											김*원 / 31세 / 여자
+										</p>
+									</li>
+
+									<li>
+										<h4>2030보험</h4>
+										<p class="subscription-contents">
+											좋은 가격의 제품입니다.
+											감사합니다.
+											많은 분께 추천드립니다
+										</p>
+										<p class="subscription-grade">
+											평점<span>9.0</span>
+										</p>
+										<p class="subscription-name">
+											권*준 / 27세 / 남
+										</p>
+									</li>
+
+									<li>
+										<h4>2030보험</h4>
+										<p class="subscription-contents">
+											교보라이프만사용해요.
+											저렴하고 괜찮은거 같아요.
+											앞으로도 쭉 사용하려구요.
+										</p>
+										<p class="subscription-grade">
+											평점<span>10.0</span>
+										</p>
+										<p class="subscription-name">
+											박*홍 / 35세 / 남자
+										</p>
+									</li>
+								</ul>
+							</article>
+
+						</section>
+
+			<!---------------------------------------------section2----------------------------------------------------->
+
+						<section id="guarantee">
+						<h2>무엇을 보장해 주나요?</h2>
+						<table>
+							<tbody>
+								<tr>
+									<td class="top-precautions">
+									※ 주의사항 : 아래 예시는 약관을 개괄적으로 설명한 것이므로 자세한 내용은 반드시 약관 및 상품설명서를 읽어보시기 바랍니다.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!------table 1------>
+							<h3 class="tabel-tit">기본계약</h3>
+							<table class="tab2-table">
+								<colgroup>
+									<col style="width:25%">
+									<col style="width:50%">
+									<col style="width:25%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>담보명</th>
+										<th>지급사유</th>
+										<th>지급금액</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td class="center">일반상해사망보험금</td>
+										<td>보험기간 중 상해의 직접결과로 사망시</td>
+										<td>보험가입금액</td>
+									</tr>
+									<tr>
+										<td  rowspan="2"  class="center">일반상해후유장해보험금</td>
+										<td>보험기간중 상해로 80% 이상에 해당하는 장해 발생 시</td>
+										<td>최초 1회 한, 보험가입금액</td>
+									</tr>
+									<tr>
+										<td>보험기간 중 상해로 80% 미만에 해당하는 장해 발생 시</td>
+										<td>보험가입금액 x 지급률</td>
+									</tr>
+								</tbody>
+							</table>
+
+						<!------table 2------>
+							<h3 class="tabel-tit">선택계약</h3>
+							<table class="tab2-table">
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:40%">
+									<col style="width:20%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="2">구분</th>
+										<th>지급사유</th>
+										<th>지급금액</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td rowspan="2"  class="center">학업<br>(생활보장 특별약관)</td>
+										<td>일반상해50%이상후유장해 교육자금<br>(10년확정, 월단위분할지급형)</td>
+										<td>보험기간 중 발생한 상해로 50%이상 후유장해가 발생한 경우</td>
+										<td>보험가입금액<br>(매월 사고발생일에 10년간 지급</td>
+									</tr>
+									<tr>
+										<td>질병 50%이상 후유장해 교육자금<br>(10년확정, 월단위분할지급형)</td>
+										<td>보험기간 중 진단확정된 질병으로 50%이상 후유장해가 발생한 경우</td>
+										<td>보험가입금액<br>(매월 사고발생일에 10년간 지급)</td>
+									</tr>
+									<tr>
+										<td rowspan="2"  class="center">JOB<br>(구직급여보장특별약관</td>
+										<td>상해·질병구직급여지원금</td>
+										<td>보험기간 중 보장개시일 이후에 상해 또는 질병으로 인하여 실업상태가 된 후 고용보험의 법적요건을 충족하여 구직급여를 수령한 경우(계약일로부터 180일 면책)</td>
+										<td>보험가입금액<br>(1년미만 보험가입금액 50%)</td>
+									</tr>
+									<tr>
+										<td>장기구직급여지원금(31/61일이상)</td>
+										<td>보험기간 중 보장개시일 이후에 고용보험의 법적요건을 충족하여 구직급여를 31일 이상 계속 수령한 경우(계약일로부터 180일 면책)</td>
+										<td>- 31일 이상 수령한 경우 : 보험가입금액- 61일 이상 수령한 경우 : 보험가입금액 추가 지급</td>
+									</tr>
+									<tr>
+										<td class="center">결혼<br>(가정보장특별약관)</td>
+										<td>일상생활배상책임 II</td>
+										<td>보험기간 중 피보험자가 타인의 신체의 장해 또는 재물에 대한 법률상의 배상책임을 부담함으로써 입은 손해</td>
+										<td>보험가입금액 한도<br>(1사고당 자기부담금 : 대물 20만원, 대인 없음)</td>
+									</tr>
+									<tr>
+										<td rowspan="3"  class="center">BEAUTY<br>(외모보장 특별약관)</td>
+										<td>외모특정상해수술비</td>
+										<td>보험기간 중 상해의 직접 결과로써 외모특정상해분류표에서 정한 외모특정상해로 진단확정되고, 그 치료를 직접적인 목적으로 수술시</td>
+										<td>보험가입금액</td>
+									</tr>
+									<tr>
+										<td>상해흉터복원수술비</td>
+										<td>보험기간 중 발생한 상해로 병원 또는 의원등에서 치료를 받고 그 직접결과로 인하여 안면부, 상지, 하지에 외형상의 반흔이나 추상장해, 신체의 기형이나 기능장해가 발생하여 그 원상회복을 목적으로 사고일로부터 2년 이내에 성형외과 전문의로부터 성형수술시</td>
+										<td>1) 안면부<br>: 수술 1㎝당 14만원<br>2) 상지․하지<br>: 수술 1㎝ 당 7만원<br>(단, 3 ㎝이상의 경우에 한합니다.)<br>※ 길이측정이 불가한 피부이식수술의 경우 수술 ㎝는 최장직경으로 합니다. (최고 500만원한도)</td>
+									</tr>
+									<tr>
+										<td>질병 영구치 보철 치료비</td>
+										<td>>보험기간 중 “치과치료보장개시일” 이후에 약관에서 정하는 질병으로 인하여 임플란트,브릿지,틀니 치료를 받고 그 치료가 종료된 때(치과치료보장개시일은 계약일로부터 그 날을 포함하여 180일이 지난 날의 다음날, 1년미만 50% 감액 지급)</td>
+										<td>임플란트/브릿지 25만원<br>틀니 50만원</td>
+									</tr>
+									<tr>
+										<td rowspan="8"  class="center">레저<br>(레저보장특별약관)</td>
+										<td>특정여가활동중<br>상해사망보험금</td>
+										<td>특정여가활동을 하는 동안 상해로 사망시</td>
+										<td>보험가입금액</td>
+									</tr>
+									<tr>
+										<td rowspan="2">특정여가활동중<br>상해후유장해보험금</td>
+										<td>보험기간 중 특정여가활동을 하는 동안 상해로 80% 이상에 해당하는 후유장해 발생 시</td>
+										<td>최초 1회 한, 보험가입금액</td>
+									</tr>
+									<tr>
+										<td>보험기간 중 특정여가활동을 하는 동안 상해로 80% 미만에 해당하는 후유장해 발생 시</td>
+										<td>>보험가입금액 × 지급률</td>
+									</tr>
+									<tr>
+										<td>스포츠활동중<br>상해사망보험금</td>
+										<td>보험기간 중 스포츠활동중 상해로 사망 시</td>
+										<td>보험가입금액</td>
+									</tr>
+									<tr>
+										<td rowspan="2">>스포츠활동중<br>상해후유장해보험금</td>
+										<td>보험기간 중 스포츠활동을 하는 동안 상해로 80% 이상에 해당하는 후유장해 발생 시</td>
+										<td>최초 1회 한, 보험가입금액</td>
+									</tr>
+									<tr>
+										<td>보험기간 중 스포츠활동을 하는 동안 상해로 80% 미만에 해당하는 후유장해 발생 시</td>
+										<td>보험가입금액 × 지급률</td>
+									</tr>
+									<tr>
+										<td>일반상해수술비</td>
+										<td>보험기간 중 발생한 상해의 직접적인 치료를 목적으로 수술을 받은 경우</td>
+										<td>>보험가입금액<br>(동일사고당 1회한)</td>
+									</tr>
+									<tr>
+										<td>깁스치료비</td>
+										<td>보험기간 중 상해 또는 진단확정된 질병으로 깁스치료(부목치료 제외)를 받은 경우</td>
+										<td>보험가입금액<br>(동일상해 또는 질병당 1회한)</td>
+									</tr>
+									<tr>
+										<td rowspan="3"  class="center">건강<br>(건강보장특별약)</td>
+										<td>암진단비</td>
+										<td>보험기간 중 보장개시일 이후에 “암”, “기타피부암”, “갑상선암”, “제자리암”, “경계성종양” 또는 “대장점막내암”으로 진단 확정된 경우<br>
+										(단, 계약일로부터 1년 미만 발생시 50% 지급)<br>
+										(단, 암의 보장개시일은 계약일로부터 그 날을 포함하여 90일이 지난날의 다음날이며, 기타피부암, 갑상선암, 제자리암, 경계성종양 및 대장점막내암의 보장개시일은 계약일로 함)</td>
+										<td>1) 암 : 보험가입금액<br>(최초 1회한)<br>2) 기타피부암, 갑상선암, 제자리암, 경계성종양, 대장점막내암 : 보험가입금액의 10%<br>(각각 최초1회한)</td>
+									</tr>
+									<tr>
+										<td>뇌출혈진단비</td>
+										<td>보험기간 중 뇌출혈으로 진단확정시</td>
+										<td>보험가입금액<br>(최초1회한)</td>
+									</tr>
+									<tr>
+										<td>급성심근경색진단비</td>
+										<td>보험기간 중 급성심근경색증으로 진단확정시</td>
+										<td>보험가입금액<br>(최초1회한)</td>
+									</tr>
+									<tr>
+										<td rowspan="6" class="center">운전<br>(운전보장특별약관)</td>
+										<td>자동차사고<br>부상보상금</td>
+										<td>보험기간 중 교통사고로 발생한 상해로 자동차손해배상보장법 시행령 제 3조에서 정한 상해등급을 받은 경우</td>
+										<td>주1)</td>
+									</tr>
+									<tr>
+										<td>자동차사고<br>변호사선임비용</td>
+										<td>보험기간 중 운전중 사고로 타인의 신체에 상해를 입혀 구속되거나 공소제기되어 변호사 선임비용을 부담한 경우(약식기소 제외)</td>
+										<td>실손보상<br>(500만원 한도)</td>
+									</tr>
+									<tr>
+										<td rowspan="3">교통사고 처리지원금<br>(동승자포함)</td>
+										<td>보험기간 중 운전중 사고로 타인 사망시</td>
+										<td rowspan="3">실손보장<br>(3,000만원 한도)</td>
+									</tr>
+									<tr>
+										<td>보험기간 중 운전중 “중대법규 위반 교통사고”로 타인 42일이상 치료를 요하는 진단시
+											<table class="tbl_type_ex">
+												<caption>진단관련 내용 구성표</caption>
+												<colgroup>
+													<col style="width:23%">
+													<col style="width:24%">
+													<col style="width:26%">
+													<col style="width:27%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th>진단일</th>
+														<th>42~69일</th>
+														<th>70~139일</th>
+														<th>140일이상</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>지급한도</td>
+														<td>1,000만원</td>
+														<td>2,000만원</td>
+														<td>3,000만원</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>보험기간 중 일반교통사고로 피해자 중상해로 공소제기되거나, 상해1~3급에 해당하는 부상을 입힌 경우</td>
+									</tr>
+									<tr>
+										<td>벌금</td>
+										<td>보험기간 중 운전 중 사고로 타인의 신체에 상해를 입혀 신체상해와 관련하여 벌금형을 받은 경우</td>
+										<td>실손보상<br>(2,000만원 한도)</td>
+									</tr>
+									<tr>
+										<td colspan="4">※ 주1 ) 가입금액 500만원 기준</td>
+										<table class="tab2-table-ex">
+											<tr>
+												<th>구분</th>
+												<th>1급</th>
+												<th>2급</th>
+												<th>3급</th>
+												<th>4급</th>
+												<th>5급</th>
+												<th>6급</th>
+												<th>7급</th>
+												<th>8~14급</th>
+											<tr>
+											<tr>
+												<td class="center">지급금액</td>
+												<td class="center">500만원</td>
+												<td class="center">300만원</td>
+												<td class="center">200만원</td>
+												<td class="center">150만원</td>
+												<td class="center">75만원</td>
+												<td class="center">40만원</td>
+												<td class="center">20만원</td>
+												<td class="center">5만원</td>
+											</tr>
+										<table>
+									</tr>
+								</tbody>
+							</table>
+							<div class="guidance-bottom">
+								<strong>꼭 알아두어야 할 사항</strong>
+								<div class="bar"></div>
+								<ul>
+									<li>세부적인 내용은 해당 약관을 따릅니다.</li>
+									<li>보상내용, 용어의 정의등 자세한 사항은 반드시 약관을 참조하시기 바랍니다.</li>
+									<li>회사는 보험기간이 끝난 때에 만기환급금을 보험수익자에게 지급합니다. 만기환급금이란, 계약자가 보험료를 완납하고 보험기간이 끝난 때에는 적립부분 순보험료(적립보험료에서 사업비를 공제한 보험료를 말합니다.)에 대하여 보험료 납입일부터 보험기간이 끝난 때까지 회사가 적립한 금액(중도인출금의 지급이 있었던 경우에는 원리금 합계액을 공제한 후의 잔액)을 말합니다. 자세한 사항은 약관을 참조하시기 바랍니다.</li>
+									<li>배상책임, 교통사고처리지원금, 벌금 등의 특약은 보험금을 지급할 다수의 보험계약(공제계약포함)이 체결되어있는 경우, 약관에 따라 비례하여 보상합니다.</li>
+								</ul>
+							</div>
+
+
+
+						</section>
+
+		<!---------------------------------section3----------------------------------------->
+
+						<section id="productPrice">
+							<h2>보험료는 어떻게 되나요?</h2>
+							<h3>기본계약</h3>
+								<table class="tab2-table">
+									<caption></caption>
+									<colgroup>
+										<col style="width:49%">
+										<col style="width:17%">
+										<col style="width:17%">
+										<col style="width:17%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">담보명</th>
+											<th scope="col">만기/납기</th>
+											<th scope="col">가입금액</th>
+											<th scope="col">보험료</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="center">일반상해사망보험금</td>
+											<td class="center">5년/5년</td>
+											<td class="right">5,000만원</td>
+											<td class="right">1,050원</td>
+										</tr>
+										<tr>
+											<td class="center">일반상해후유장해보험금</td>
+											<td class="center">5년/5년</td>
+											<td class="right">5,000만원</td>
+											<td class="right">1,450원</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<h3>선택계약</h3>
+								<table class="tab2-table">
+									<caption></caption>
+									<colgroup>
+										<col style="width:20%">
+										<col style="width:29%">
+										<col style="width:17%">
+										<col style="width:17%">
+										<col style="width:17%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" colspan="2">담보명</th>
+											<th scope="col">만기/납기</th>
+											<th scope="col">가입금액</th>
+											<th scope="col">보험료</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<th scope="row"colspan="2">보장보험료</th>
+											<td class="right" colspan="3">13,165원</td>
+										</tr>
+										<tr>
+											<th scope="row"colspan="2">적립보험료</th>
+											<td class="right" colspan="3">835원</td>
+										</tr>
+										<tr>
+											<th scope="row" colspan="2">합계보험료</th>
+											<td class="right" colspan="3"><span>14,000원</span</td>
+										</tr>
+									</tfoot>
+									<tbody>
+										<tr>
+											<td rowspan="2" class="center">학업<br>(생활보장 특별약관)</td>
+											<td>일반상해50%이상후유장해 교육자금<br>(10년확정, 월단위분할지급형)</td>
+											<td class="center">5년/5년</td>
+											<td class="right">50만원(월)</td>
+											<td class="right">475원</td>
+										</tr>
+										<tr>
+											<td>질병50%이상후유장해 교육자금<br>(10년확정, 월단위분할지급형)</td>
+											<td class="center">5년/5년</td>
+											<td class="right">50만원(월)</td>
+											<td class="right">135원</td>
+										</tr>
+										<tr>
+											<td rowspan="2" class="center">JOB<br>(구직급여보장특별약관)</td>
+											<td>상해·질병구직급여지원금</td>
+											<td class="center">5년/5년</td>
+											<td class="right">100만원</td>
+											<td class="right">49원</td>
+										</tr>
+										<tr>
+											<td>장기구직급여지원금(31/61일이상)</td>
+											<td class="center">5년/5년</td>
+											<td class="right">20만원</td>
+											<td class="right">2,320원</td>
+										</tr>
+										<tr>
+											<td class="center">결혼<br>(가정보장특별약관)</td>
+											<td>일상생활배상책임Ⅱ</td>
+											<td class="center">5년/5년</td>
+											<td class="right">1억원</td>
+											<td class="right">253원</td>
+										</tr>
+										<tr>
+											<td rowspan="3" class="center">BEAUTY<br>(외모보장특별약관)</td>
+											<td>외모특정상해수술비</td>
+											<td class="center">5년/5년</td>
+											<td class="right">50만원</td>
+											<td class="right"> 165원</td>
+										</tr>
+										<tr>
+											<td>상해흉터복원수술비</td>
+											<td class="center">5년/5년</td>
+											<td class="right">7만원</td>
+											<td class="right">49원</td>
+										</tr>
+										<tr>
+											<td>질병 영구치보철 치료비</td>
+											<td class="center">5년/5년</td>
+											<td class="right">임플란트/브릿지 25만원<br>틀니 50만원</td>
+											<td class="right">860원</td>
+										</tr>
+										<tr>
+											<td rowspan="6" class="center">레저<br>(레저보장특별약관)</td>
+											<td>특정여가활동중상해사망보험금</td>
+											<td class="center">5년/5년</td>
+											<td class="right">5,000만원</td>
+											<td class="right">125원</td>
+										</tr>
+										<tr>
+											<td>특정여가활동중상해후유장해보험금</td>
+											<td class="center">5년/5년</td>
+											<td class="right">5,000만원</td>
+											<td class="right">155원</td>
+										</tr>
+										<tr>
+											<td>스포츠활동중상해사망보험금</td>
+											<td class="center">5년/5년</td>
+											<td class="right">5,000만원</td>
+											<td class="right">210원</td>
+										</tr>
+										<tr>
+											<td>스포츠활동중상해후유장해보험금</td>
+											<td class="center">5년/5년</td>
+											<td class="right">5,000만원</td>
+											<td class="right">295원</td>
+										</tr>
+										<tr>
+										  <td>일반상해수술비</td>
+										  <td class="center">5년/5년</td>
+										  <td class="right">50만원</td>
+										  <td class="right">1,005원</td>
+									  </tr>
+										<tr>
+										  <td>깁스치료비</td>
+										  <td class="center">5년/5년</td>
+										  <td class="right">10만원</td>
+										  <td class="right">70원</td>
+									  </tr>
+										<tr>
+											<td rowspan="3" class="center">건강<br>(건강보장특별약관)</td>
+											<td>암진단비</td>
+											<td class="center">5년/5년</td>
+											<td class="right">1,000만원</td>
+											<td class="right">680원</td>
+										</tr>
+										<tr>
+											<td>뇌출혈진단비 </td>
+											<td class="center">5년/5년</td>
+											<td class="right">2,000만원</td>
+											<td class="right">380원</td>
+										</tr>
+										<tr>
+											<td>급성심근경색진단비 </td>
+											<td class="center">5년/5년</td>
+											<td class="right">2,000만원</td>
+											<td class="right">360원</td>
+										</tr>
+										<tr>
+											<td rowspan="4" class="center">운전<br>(운전보장특별약관)</td>
+											<td>자동차사고 부상보상금</td>
+											<td class="center">5년/5년</td>
+											<td class="right">500만원</td>
+											<td class="right">1,000원</td>
+										</tr>
+										<tr>
+											<td>자동차사고 변호사선임비용 </td>
+											<td class="center">5년/5년</td>
+											<td class="right">500만원</td>
+											<td class="right">176원</td>
+										</tr>
+										<tr>
+											<td>교통사고 처리지원금<br>(동승자포함)</td>
+											<td class="center">5년/5년</td>
+											<td class="right">3,000만원</td>
+											<td class="right">1,597원</td>
+										</tr>
+										<tr>
+											<td>벌금</td>
+											<td class="center">5년/5년</td>
+											<td class="right">2,000만원</td>
+											<td class="right">306원</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- 안내사항 -->
+								<table>
+									<caption>안내사항</caption>
+										<tbody><tr>
+											<td>
+											※ 피보험자의 나이, 직업, 직종, 직무, 과거 상병 등 기타 사항으로 인하여 가입금액이 제한되거나 인수가 불가할 수도 있습니다.<br>
+											※ 예시보험료는 성별, 나이, 직업, 가입금액, 납입기간 등에 따라 달라질 수 있습니다.
+											</td>
+										</tr>
+								</tbody></table>
+
+								<!-- 가입조건 -->
+								<br><div class="guidance-bottom">
+									<strong>가입조건</strong>
+									<div class="bar"></div>
+									<ul>
+										<li>가입나이 : 20세 ~ 39세</li>
+										<li>보험기간 : 3/5년만기</li>
+										<li>납입기간 : 전기납, 일시납</li>
+										<li>납입주기 : 월납/연납/일시납</li>
+										※ 세부적인 사항은 블루라이프생명 홈페이지 상품공시실의 사업방법서를 참고하시기 바랍니다.
+									</ul>
+								</div>
+
+								<h3>해지환급금 예시</h3>
+
+								<table>
+									<caption>해지환급금, 예상환급금 설명을 위한 구성 표</caption>
+									<colgroup>
+										<col style="width:20%">
+										<col style="width:20%">
+										<col style="width:10%">
+										<col style="width:10%">
+										<col style="width:10%">
+										<col style="width:10%">
+										<col style="width:10%">
+										<col style="width:10%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="2">경과기간<br>(보험연령)</th>
+											<th scope="col" rowspan="2">납입보험료</th>
+											<th scope="col" colspan="2">적용이율시</th>
+										</tr>
+										<tr>
+											<th scope="col">해지환급금</th>
+											<th scope="col">예상환급금</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="center">1년(31세)</td>
+											<td class="right">168,000원</td>
+											<td class="right">16,726원</td>
+											<td class="right">9.9%</td>
+										</tr>
+										<tr>
+											<td class="center">2년(32세)</td>
+											<td class="right">336,000원</td>
+											<td class="right">28,504원</td>
+											<td class="right">8.4%</td>
+										</tr>
+										<tr>
+											<td class="center">3년(33세)</td>
+											<td class="right">504,000원</td>
+											<td class="right">38,696원</td>
+											<td class="right">7.6%</td>
+										</tr>
+										<tr>
+											<td class="center">4년(34세)</td>
+											<td class="right">672,000원</td>
+											<td class="right">46,702원</td>
+											<td class="right">6.9%</td>
+										</tr>
+										<tr>
+											<td class="center">만기(35세)</td>
+											<td class="right">840,000원</td>
+											<td class="right">51,629원</td>
+											<td class="right">6.1%</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<div class="guidance-bottom">
+									<strong>안내사항</strong>
+								  <div class="bar"></div>
+									<ul>
+										<li>상기 예시금액에 적용되는 이율은 (2.5%) 확정금리이며, 계약내용변경, 보험료납일일 등에 따라 해지환급금이 달라질 수 있습니다.</li>
+										<li>중도해지시 해지환급금이 기납입보험료 보다 큰 경우 동 차액에 대하여 이자소득세가 부과될 수 있습니다.</li>
+									</ul>
+								</div>
+						</section>
+					</div>
+
+
+				</article>
+			</div>
+
+			<aside class="right-sideBar">
+			<ul>
+				<li><a href="sub.html">보험상품메인</a></li>
+				<li><a href="2030.html">2030 보험</a></li>
+				<li><a href="">종신 . 정기</a></li>
+				<li><a href="">치아 . 암 . 건강</a></li>
+				<li><a href="">노후대비</a></li>
+				<li><a href="">여행 / 원데이</a></li>
+				<li><a href="">반려동물</a></li>
+				<li><a href="">어린이</a></li>
+				<li><a href="">운전자 보험</a></li>
+
+			</ul>
+		</aside>
+		</div>
+
+	</section>
+
+	<footer id="main-footer">
+		<div id="footer-service">
+			<div id="footer-service-inner">
+				<h4>블루라이프 생명은 언제나 고객님과 함께합니다.</h4>
+				<h3>고객센터 1577 -  1577</h3>
+				<table>
+					<tr>
+						<th  class="notosanskr">평일</th>
+						<td  class="notosanskr">오전9시 ~ 오후9시</td>
+					</tr>
+					<tr>
+						<th  class="notosanskr">공휴일</th>
+						<td  class="notosanskr">오전10시 ~ 오후3시</td>
+					</tr>
+				</table>
+				<p class="notosanskr">홈페이지에서 365일 24시간 보험가입이 가능합니다.</p>
+			</div>
+		</div>
+		<div id="footer-bar">
+			<ul id="footer-bar-nav">
+				<li><a href="noticeRoom.html">공시실 바로가기</a></li>
+				<li><a href="">마케팅 동의</a></li>
+				<li><a href="">가입설계동의</a></li>
+				<li><a href="">개인정보처리방침</a></li>
+				<li><a href="">금융소비자정보포털</a></li>
+				<li><a href="">전자민원접수</a></li>
+			</ul>
+		</div>
+		<div id="footer-inner">
+			<div id="footer-inner-content1">
+				<ul>
+					<li class="footer-inner-tit"><a href="">회원권리안내</a></li>
+					<li><a href="">이용약관</a></li>
+					<li><a href="">전자금융거래기본약관</a></li>
+					<li><a href=""><span>개인정보취급방침</span></a></li>
+					<li><a href=""><span>개인정보처리방침</span></a></li>
+					<li><a href="">신용정보활용체제</a></li>
+					<li><a href="">이용,제공조회</a></li>
+					<li><a href="">금리인하요구권</a></li>
+					<li class="last"><a href="">대출계약철회권</a></li>
+				</ul>
+
+				<ul>
+					<li class="footer-inner-tit"><a href="">불 만 / 신 고</a></li>
+					<li><a href="">전자민원접수</a></li>
+					<li><a href="">펀드판매관련분편신고센터</a></li>
+					<li><a href="">보험범죄신고센터</a></li>
+					<li><a href="">대출모집인</a></li>
+					<li><a href="">과장광고신고</a></li>
+					<li><a href="">서민금융119</a></li>
+					<li><a href="">장애인보험가입차변신고센터</a></li>
+					<li class="last"><a href="">E금융민원센터</a></li>
+				</ul>
+
+				<ul>
+					<li class="footer-inner-tit"><a href="">안내/유의사항</a></li>
+					<li><a href="">공시실</a></li>
+					<li><a href="">사회공헌공시실</a></li>
+					<li><a href="">채권추심업무 처리정차안내</a></li>
+					<li><a href="">보호금융상품등록부</a></li>
+					<li><a href="">휴면/분할(만기)보험금조회</a></li>
+					<li><a href="">공인인증센터</a></li>
+					<li><a href="">사이트맵</a></li>
+					<li class="last"><a href="">ENGLISH</a></li>
+				</ul>
+			</div>
+
+			<div id="footer-inner-content2">
+				<div id="footer-company-information">
+					<p>블루라이프생명(주) 대표이사 : 이명호 사업자등록번호 : 107-88-01234</p>
+					<address>
+						서울시 영등포구 국제금융로6길 11 블루빌딩 (07330)<br>
+						COPYRIGHT © BLUE  LIFEPLANET LIFE INSURANCE COMPANY ALL RIGHTS RESERVED.
+					</address>
+				</div>
+				<ul>
+					<li><img src="images/footer-icon1.png" alt=""></li>
+					<li><img src="images/footer-icon2.png" alt=""></li>
+					<li><img src="images/footer-icon3.png" alt=""></li>
+					<li><img src="images/footer-icon4.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	</body>
+
+</html>
